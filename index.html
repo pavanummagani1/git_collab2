@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+<body>
+    <!--Pavan Kalyan -->
+    <center><h2>Enter the details to login</h2>
+    <form action="./loginresponse.html" method="get">
+        <label for="username">Username</label> <br>
+        <input type="text" name="Username" id="username" pattern="[A-Za-z\d]{8,12}" title="please follow the requested format [A-Za-z\d]{8,12}" required>
+        <br>
+        <br>
+        <label for="password">Password</label> <br>
+        <input type="password" name="password" id="password" pattern="(?=*[A-Z])(?=*[a-z])(?=*[\d])(?=*[@$&!?])" title="Password must contain a capital letter, a small letter, a number and a special character among these @$&!?" required>
+        <br>
+        <br>
+        <input type="submit" value="Login">
+        <br>
+        <br>
+        <button> <a href="">Forgot Password</a> &#128530</button>
+        <button> <a href="">Register Now! </a> &#128536 </button>
+    </form>
+</center>
+</body>
+</html>

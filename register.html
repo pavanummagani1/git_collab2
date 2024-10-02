@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now</title>
+</head>
+<body>
+    <!--Pavan Kalyan-->
+    <center>
+        <h2>Enter the details to Register Now</h2>
+    <form action="" method="get">
+        <label for="username">Username</label> <br>
+        <input type="text" name="Username" id="username" pattern="[A-Za-z\d]{8,12}" title="please follow the requested format [A-Za-z\d]{8,12}" required>
+        <br>
+        <br>
+        <label for="password">Password</label> <br>
+        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[@$&!?]).{8,16}" title="Password must contain a capital letter, a small letter, a number and a special character among these @$&!? and of length 8-16 characters" required>
+        <br>
+        <br>
+        <label for="email">Email</label> <br>
+        <input type="email" name="Email" id="email" pattern="[a-z0-9.]+@(gmail|outlook|yahoo|gov|org|in)+\.[a-z]{2,}" title="Email should contain gmail/outllok/yahoo/gov/org/in" required> 
+        <br> <br>
+        <label for="phonenumber">Phone Number</label> <br>
+        <input type="text" name="Phonenumber" pattern="[\d]{10}" title="Number should contain only 10 digits" required>
+
+        <br> <br>
+        <input type="submit" value="Register Now">
+        <button> <a href="./index.html">Back to Login Page</a> </button>
+    </center>
+</body>
+</html>

@@ -14,7 +14,7 @@
         <br>
         <br>
         <label for="password">Password</label> <br>
-        <input type="password" name="password" id="password" pattern="(?=*[A-Z])(?=*[a-z])(?=*[\d])(?=*[@$&!?])" title="Password must contain a capital letter, a small letter, a number and a special character among these @$&!?" required>
+        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[@$&!?].{8,16})" title="Password must contain a capital letter, a small letter, a number and a special character among these @$&!? and of length 8-16 characters" required>
         <br>
         <br>
         <input type="submit" value="Login">
